@@ -1,9 +1,19 @@
 'use strict';
 
-const TEMP = 1;
+document.getElementById('loginButton').onclick = function(){
 
-import welcome from './welcome';
+    require.ensure([], function(reqiure){
+        let login = require('./login');
 
-welcome("home!");
+        login();
+    });
+};
 
-exports.welcome = welcome;
+document.getElementById('logoutButton').onclick = function(){
+
+    require.ensure([], function(reqiure){
+        let logout = require('./logout');
+
+        logout();
+    });
+};

@@ -7,19 +7,17 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
-//module.exports = [{},{}{}];
-
 module.exports = {
     context: __dirname + '/frontend',
+
     entry: {
-        home: "./home",
-        about: "./about"
-        //,common: ["./common", "./welcome"]
+        app: "./app"
     },
+
     output: {
-        path: __dirname + '/public',
-        filename: '[name].js',
-        library: '[name]'
+        path: __dirname + '/public/js',
+        publicPath:'/js/',
+        filename: '[name].js'
     },
 
     watch: NODE_ENV == 'development',
@@ -28,25 +26,8 @@ module.exports = {
         aggregateTimeout: 100
     },
 
-    devtool: NODE_ENV == 'development' ? "source-map" : null,
-
     plugins: [
-        new webpack.NoEmitOnErrorsPlugin(),
-
-        new webpack.DefinePlugin({
-            NODE_ENV: JSON.stringify(NODE_ENV),
-            LANG: JSON.stringify('ru')
-        }),
-
-        new webpack.optimize.CommonsChunkPlugin({
-            name: "common",
-            chunks: ['about','home']
-        })
-
-        //,new webpack.optimize.CommonsChunkPlugin({
-        //    name: "common-goods",
-        //    chunks: ['shop','order']
-        //})
+        new webpack.NoEmitOnErrorsPlugin()
     ],
 
     module: {
