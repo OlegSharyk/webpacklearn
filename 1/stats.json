@@ -1,0 +1,454 @@
+
+Webpack is watching the filesтАж
+
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.10.0",
+  "hash": "274ee4091276f7c6d250",
+  "time": 507,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "home": [
+      "home.js",
+      "home.js.map"
+    ],
+    "about": [
+      "about.js",
+      "about.js.map"
+    ],
+    "commons": [
+      "commons.js",
+      "commons.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "home.js",
+      "size": 526,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "about.js",
+      "size": 549,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "commons.js",
+      "size": 6140,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "commons"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js.map",
+      "size": 428,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "about.js.map",
+      "size": 441,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "commons.js.map",
+      "size": 6376,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "commons"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "home": {
+      "chunks": [
+        2,
+        0
+      ],
+      "assets": [
+        "commons.js",
+        "commons.js.map",
+        "home.js",
+        "home.js.map"
+      ]
+    },
+    "about": {
+      "chunks": [
+        2,
+        1
+      ],
+      "assets": [
+        "commons.js",
+        "commons.js.map",
+        "about.js",
+        "about.js.map"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 111,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js",
+        "home.js.map"
+      ],
+      "hash": "8dd6ee0929d6376bc4d9",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 1,
+          "identifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+          "name": "./home.js",
+          "index": 0,
+          "index2": 1,
+          "size": 111,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "profile": {
+            "factory": 26,
+            "building": 378
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "'use strict';\n\nconst TEMP = 1;\n\nimport welcome from './welcome';\n\nwelcome(\"home!\");\n\nexports.welcome = welcome;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 1,
+          "module": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+          "moduleIdentifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+          "moduleName": "./home.js",
+          "loc": "",
+          "name": "home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 138,
+      "names": [
+        "about"
+      ],
+      "files": [
+        "about.js",
+        "about.js.map"
+      ],
+      "hash": "1bdcb964023bb69e97a5",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 2,
+          "identifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\about.js",
+          "name": "./about.js",
+          "index": 2,
+          "index2": 2,
+          "size": 138,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "profile": {
+            "factory": 352,
+            "building": 64,
+            "dependencies": 3
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "/**\r\n * Created by Oleg on 17.12.2017.\r\n */\n'use strict';\n\nimport welcome from './welcome';\n\nwelcome(\"about\");\n\nexports.welcome = welcome;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 2,
+          "module": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\about.js",
+          "moduleIdentifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\about.js",
+          "moduleName": "./about.js",
+          "loc": "",
+          "name": "about",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 195,
+      "names": [
+        "commons"
+      ],
+      "files": [
+        "commons.js",
+        "commons.js.map"
+      ],
+      "hash": "8a77fb8dfad20b258d78",
+      "parents": [],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\welcome.js",
+          "name": "./welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 195,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "issuer": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+          "issuerId": 1,
+          "issuerName": "./home.js",
+          "profile": {
+            "factory": 17,
+            "building": 26
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+              "module": "./home.js",
+              "moduleName": "./home.js",
+              "type": "harmony import",
+              "userRequest": "./welcome",
+              "loc": "5:0-32"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\about.js",
+              "module": "./about.js",
+              "moduleName": "./about.js",
+              "type": "harmony import",
+              "userRequest": "./welcome",
+              "loc": "6:0-32"
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "/**\r\n * Created by Oleg on 16.12.2017.\r\n */\n\n'use strict';\n\nexport default function (message) {\n\n  if (NODE_ENV == 'development') {\n    console.log(message);\n  }\n  alert(`Welcome ${message}`);\n};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\welcome.js",
+      "name": "./welcome.js",
+      "index": 1,
+      "index2": 0,
+      "size": 195,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "issuer": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+      "issuerId": 1,
+      "issuerName": "./home.js",
+      "profile": {
+        "factory": 17,
+        "building": 26
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+          "module": "./home.js",
+          "moduleName": "./home.js",
+          "type": "harmony import",
+          "userRequest": "./welcome",
+          "loc": "5:0-32"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\about.js",
+          "module": "./about.js",
+          "moduleName": "./about.js",
+          "type": "harmony import",
+          "userRequest": "./welcome",
+          "loc": "6:0-32"
+        }
+      ],
+      "usedExports": [
+        "default"
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "/**\r\n * Created by Oleg on 16.12.2017.\r\n */\n\n'use strict';\n\nexport default function (message) {\n\n  if (NODE_ENV == 'development') {\n    console.log(message);\n  }\n  alert(`Welcome ${message}`);\n};"
+    },
+    {
+      "id": 1,
+      "identifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\home.js",
+      "name": "./home.js",
+      "index": 0,
+      "index2": 1,
+      "size": 111,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "profile": {
+        "factory": 26,
+        "building": 378
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "'use strict';\n\nconst TEMP = 1;\n\nimport welcome from './welcome';\n\nwelcome(\"home!\");\n\nexports.welcome = welcome;"
+    },
+    {
+      "id": 2,
+      "identifier": "G:\\learning\\webpack\\node_modules\\babel-loader\\lib\\index.js!G:\\learning\\webpack\\frontend\\about.js",
+      "name": "./about.js",
+      "index": 2,
+      "index2": 2,
+      "size": 138,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "profile": {
+        "factory": 352,
+        "building": 64,
+        "dependencies": 3
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "/**\r\n * Created by Oleg on 17.12.2017.\r\n */\n'use strict';\n\nimport welcome from './welcome';\n\nwelcome(\"about\");\n\nexports.welcome = welcome;"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
+Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? Завершить выполнение пакетного файла [Y(да)/N(нет)]? 
