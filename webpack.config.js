@@ -7,11 +7,14 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
+//module.exports = [{},{}{}];
+
 module.exports = {
     context: __dirname + '/frontend',
     entry: {
-      home: "./home",
-      about: "./about"
+        home: "./home",
+        about: "./about"
+        //,common: ["./common", "./welcome"]
     },
     output: {
         path: __dirname + '/public',
@@ -28,10 +31,22 @@ module.exports = {
     devtool: NODE_ENV == 'development' ? "source-map" : null,
 
     plugins: [
+        new webpack.NoEmitOnErrorsPlugin(),
+
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
             LANG: JSON.stringify('ru')
+        }),
+
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "common",
+            chunks: ['about','home']
         })
+
+        //,new webpack.optimize.CommonsChunkPlugin({
+        //    name: "common-goods",
+        //    chunks: ['shop','order']
+        //})
     ],
 
     module: {
