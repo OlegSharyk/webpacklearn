@@ -1,5 +1,5 @@
-var home =
-webpackJsonphome([1],{
+var about =
+webpackJsonp_name_([1],{
 
 /***/ 2:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

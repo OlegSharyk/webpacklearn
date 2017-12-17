@@ -1,5 +1,5 @@
 var home =
-webpackJsonphome([0],[
+webpackJsonp_name_([0],[
 /* 0 */,
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
