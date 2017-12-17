@@ -125,6 +125,8 @@ document.getElementById('logoutButton').onclick = function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./cool/stuff": 5,
+	"./cool/stuff.js": 5,
 	"./login": 0,
 	"./login.js": 0,
 	"./logout": 1,
@@ -145,6 +147,14 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = 4;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Oleg on 17.12.2017.
+ */
 
 /***/ })
 /******/ ]);
