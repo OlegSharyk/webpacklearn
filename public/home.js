@@ -61,28 +61,11 @@ var home =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__welcome__ = __webpack_require__(1);
-
-
-const TEMP = 1;
-
-
-
-Object(__WEBPACK_IMPORTED_MODULE_0__welcome__["a" /* default */])("home!");
-
-exports.welcome = __WEBPACK_IMPORTED_MODULE_0__welcome__["a" /* default */];
-
-/***/ }),
-/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -100,6 +83,23 @@ exports.welcome = __WEBPACK_IMPORTED_MODULE_0__welcome__["a" /* default */];
   alert(`Welcome ${message}`);
 });;
 
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__welcome__ = __webpack_require__(0);
+
+
+const TEMP = 1;
+
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__welcome__["a" /* default */])("home!");
+
+exports.welcome = __WEBPACK_IMPORTED_MODULE_0__welcome__["a" /* default */];
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=home.js.map
